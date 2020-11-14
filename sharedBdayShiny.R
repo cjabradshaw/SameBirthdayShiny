@@ -8,16 +8,22 @@ rm(list = ls())
 # load libraries
 library(shiny)
 library(ggplot2)
-library(ggpubr)
 
 ## call functions
-#source(file.path("./functions/", "setBackgroundColor.R"), local=T)
+source(file.path("./functions/", "setBackgroundColor.R"), local=T)
 
 ui <- fluidPage(
   
   # title of app
   titlePanel("Probability two people in a group share the same birthday"),
   
+  tags$style("@import url(https://use.fontawesome.com/releases/v5.7.2/css/all.css);"),
+  
+  setBackgroundColor(
+    color = "#f8fbf9",
+    gradient = c("linear"),
+    direction = c("bottom")
+  ),
 
   wellPanel(style = "background: ash",
     tags$p(style="font-family:Avenir", tags$i(class="fab fa-r-project", title="R Project"),"Shiny App by", tags$a(href="https://globalecologyflinders.com/people/#CJAB", "Corey Bradshaw "),
