@@ -1,4 +1,5 @@
 # Probability two people in a group share the same birthday
+<img align="right" src="cake.png" alt="cake" width="200" style="margin-top: 20px">
 
 <a target="_blank" href="https://cran.r-project.org">R</a> function to calculate the probability that two people within a group of a specified size share the same birthday
 
